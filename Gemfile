@@ -27,6 +27,14 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# CSS framework based on Flexbox
+gem 'bulma-rails', '~> 0.9.1'
+# Forms
+gem 'simple_form', '~> 5.0', '>= 5.0.3'
+# Rails view helper for adding gravatars into your Rails application
+gem 'gravatar_image_tag', '~> 1.2'
+# authentication solution for Rails
+gem 'devise', '~> 4.7', '>= 4.7.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,6 +48,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Provides a better error page
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  # tool to easily handle events on file system modifications
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  # automatically reloads your browser when 'view' files are modified
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
